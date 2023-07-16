@@ -97,7 +97,7 @@ const Wallets = () => {
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => {
-                      showModal2(false);
+                      setShowModal2(false);
                     }}
                   >
                     <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
@@ -160,7 +160,7 @@ const Wallets = () => {
           <h3 className="text-white text-1xl 2xl:text-2xl my-1 font-bold borderGradient">
             DESKTOP DUBX WALLET{" "}
             <a
-              href="#"
+              href="https://github.com/DUBXCOIN/go-dubxcoin"
               type="submit"
               className="mx-4 bg-[#1BF8EC] px-7 mx-4 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
             >
