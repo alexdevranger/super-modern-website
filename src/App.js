@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import Send from "./pages/Send";
 import About from "./pages/About";
-import Buy from "./pages/Buy";
+// import Buy from "./pages/Buy";
 import Disclaimer from "./pages/Disclaimer";
 import Contact from "./pages/Contact";
 import RoadmapPage from "./pages/RoadmapPage";
@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/send" element={<Send />} />
           <Route exact path="/about-us" element={<About />} />
-          <Route exact path="/easy-buy" element={<Buy />} />
+          {/* <Route exact path="/easy-buy" element={<Buy />} /> */}
           <Route exact path="/roadmap" element={<RoadmapPage />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
