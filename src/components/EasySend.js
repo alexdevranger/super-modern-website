@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { formatBalance, formatChainAsNum } from "../utils/metamaskUtils";
 import detectEthereumProvider from "@metamask/detect-provider";
 

@@ -11,8 +11,6 @@ import { GiMining } from "react-icons/gi";
 import { HiExternalLink } from "react-icons/hi";
 import videoGalaxy from "../images/video1.mp4";
 import videoMine from "../images/video2.mp4";
-import walletWindows from "../images/dubxwalletsetup.exe";
-import walletLinux from "../images/Linux-dubxwallet-0.1.0.zip";
 
 const Wallets = () => {
   const [showModal1, setShowModal1] = React.useState(false);
@@ -160,7 +158,7 @@ const Wallets = () => {
           <h3 className="text-white text-1xl 2xl:text-2xl my-1 font-bold borderGradient">
             DESKTOP DUBX WALLET{" "}
             <a
-              href="https://github.com/DUBXCOIN/go-dubxcoin"
+              href="https://github.com/DUBXCOIN/dubx-desktop-wallet/blob/master/README.md"
               type="submit"
               className="mx-4 bg-[#1BF8EC] px-7 mx-4 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
             >
@@ -183,10 +181,18 @@ const Wallets = () => {
             />
           </div>
           <p className="text-center my-2 text-white font-light text-base mt-6 flex items-center justify-evenly">
-            <a href={walletWindows} target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/DUBXCOIN/dubx-desktop-wallet/releases"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SiWindows className="mr-2 text-[30px] text-white" />
             </a>
-            <a href={walletLinux} target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/DUBXCOIN/dubx-desktop-wallet/releases"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinux className="mr-2 text-[30px] text-white" />
             </a>
           </p>

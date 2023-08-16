@@ -5,22 +5,20 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Arabian() {
-  const [showModal, setShowModal] = React.useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setShowModal(true);
-    }, 3000);
-  }, []);
+  // const [showModal, setShowModal] = React.useState(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowModal(true);
+  //   }, 3000);
+  // }, []);
 
   return (
     <div className="flex w-full justify-center items-center">
-      {showModal && (
+      {/* {showModal && (
         <>
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="w-auto">
-              {/*content*/}
               <div className="bg-[#170e2a] rounded-lg shadow-lg outline-none focus:outline-none">
-                {/*header*/}
                 <div className="flex items-center justify-between p-5 border-b border-solid border-gray-200 rounded-t">
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-white text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -33,7 +31,6 @@ function Arabian() {
                     </span>
                   </button>
                 </div>
-                {/*body*/}
                 <div className="p-4">
                   <div className="flex items-start justify-center">
                     <img
@@ -43,7 +40,6 @@ function Arabian() {
                     />
                   </div>
                 </div>
-                {/*footer*/}
                 <div className="flex items-center justify-end p-4 border-t border-solid border-gray-200 rounded-b">
                   <button
                     className="bg-[#673ab7] text-white active:bg-[#533ab7] font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
@@ -59,7 +55,7 @@ function Arabian() {
             </div>
           </div>
         </>
-      )}
+      )} */}
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 mt-20">
         <div className="flex-1 flex flex-col justify-start items-center w-[70%]">
           <LazyLoadImage

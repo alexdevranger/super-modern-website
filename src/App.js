@@ -10,6 +10,7 @@ import { Footer } from "./components";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ReactGA from "react-ga4";
+import MobilePage from "./pages/MobilePage";
 
 const TRACKING_ID = "G-8QLT3DFJM7";
 ReactGA.initialize(TRACKING_ID, {
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/roadmap" element={<RoadmapPage />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
+          <Route exact path="/mobile-wallet" element={<MobilePage />} />
         </Routes>
         <Footer />
       </HashRouter>

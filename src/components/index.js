@@ -18,3 +18,8 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Wallets } from "./Wallets";
 export { default as DisclaimerPart } from "./DisclaimerPart";
 export { default as ScrollToTop } from "./ScrollToTop";
+export { default as Mobile } from "./Mobile";
+export { default as Slider } from "./Slider";
+export { default as MobWallet } from "./MobWallet";
+export { default as Accordion } from "./Accordion";
+export { default as NewAccordion } from "./NewAccordion";

@@ -35,11 +35,11 @@ const Navbar = () => {
               easy-send
             </NavLink>
           </li>
-          {/* <li className="mx-1 lg:mx-2 cursor-pointer text-[14px] lg:text-[20px]">
-            <NavLink to="/easy-buy" activeclassname="active-link">
-              easy-buy
+          <li className="mx-1 lg:mx-2 cursor-pointer text-[14px] lg:text-[20px]">
+            <NavLink to="/mobile-wallet" activeclassname="active-link">
+              mobile
             </NavLink>
-          </li> */}
+          </li>
           <li className="mx-1 lg:mx-2 cursor-pointer text-[14px] lg:text-[20px]">
             <NavLink to="/contact" activeclassname="active-link">
               contact
@@ -85,9 +85,9 @@ const Navbar = () => {
             <li className="mx-4 my-8 cursor-pointer">
               <Link to="/send">EASY-SEND</Link>
             </li>
-            {/* <li className="mx-4 my-8 cursor-pointer">
-              <Link to="/easy-buy">EASY-BUY</Link>
-            </li> */}
+            <li className="mx-4 my-8 cursor-pointer">
+              <Link to="/mobile-wallet">MOBILE</Link>
+            </li>
             <li className="mx-4 my-8 cursor-pointer">
               <Link to="/contact">CONTACT</Link>
             </li>
