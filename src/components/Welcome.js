@@ -51,6 +51,31 @@ const Welcome = () => {
   const [transact, setTransact] = useState({});
   const [balanceAddr, setBalanceAddr] = useState("");
 
+  async function addDubxNetwork() {
+    try {
+      const result = await window.ethereum.request({
+        method: "wallet_addEthereumChain",
+        params: [
+          {
+            chainId: "0xCC5",
+            rpcUrls: ["https://rpcmain.arabianchain.org"],
+            chainName: "Dubx Mainnet",
+            nativeCurrency: {
+              name: "DUBX",
+              symbol: "DUBX",
+              decimals: 18,
+            },
+            blockExplorerUrls: ["https://explorer.arabianchain.org/#/"],
+          },
+        ],
+      });
+
+      console.log("Dubx network added to MetaMask:", result);
+    } catch (error) {
+      console.log("Error adding Dubx network to MetaMask:", error);
+    }
+  }
+
   const handleChange = (e, name) => {
     setformData((prevState) => ({ ...prevState, [name]: e.target.value }));
   };
@@ -252,6 +277,17 @@ const Welcome = () => {
                 Add DUBIXCOIN <br />
                 NETWORK to Metamask
               </h1>
+              {/* {window.ethereum?.isMetaMask && wallet.accounts.length < 1 && ( */}
+              <button
+                type="button"
+                onClick={addDubxNetwork}
+                className="flex flex-row justify-center items-center my-5 bg-[#1BF8EC] p-3 rounded-full cursor-pointer  hover:bg-white hover:border-[#1BF8EC] "
+              >
+                <p className="text-[#4a2084] hover:text-[#1BF8EC] text-base font-semibold">
+                  Add DUBX Network
+                </p>
+              </button>
+              {/* )} */}
             </div>
             <div className="relative w-[150px] overflow-hidden ml-[1rem] cursor-pointer">
               <LazyLoadImage
