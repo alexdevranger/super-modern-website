@@ -102,6 +102,7 @@ const Footer = () => (
           <p className="text-[white] text-sm text-left font-medium mt-4 hover:text-[pink] hover:underline">
             <Link to="/disclaimer">DISCLAIMER</Link>
           </p>
+          
         </div>
       </div>
     </div>

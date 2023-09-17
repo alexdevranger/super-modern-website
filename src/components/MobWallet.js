@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/effect-cube";
+import { BiLinkExternal } from "react-icons/bi";
 import mob1 from "../images/mob1.png";
 import mob2 from "../images/mob2.png";
 import mob3 from "../images/mob3.png";
@@ -20,9 +21,10 @@ import { PiDeviceMobileFill } from "react-icons/pi";
 import { MdInstallMobile } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ color, title, icon, subtitle }) => (
-  <div className="flex flex-row justify-start items-center white-glassmorphism p-3 hover:shadow-xl my-[10px]">
+  <div className="flex flex-row justify-start items-center white-glassmorphism p-3 hover:shadow-xl my-[10px] w-full">
     <div
       className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}
     >
@@ -41,8 +43,8 @@ const MobWallet = () => {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div className="flex flex-col xl:flex-row lg:flex-col md:flex-col sm:flex-col min-[300px]:flex-col max-[639px]:flex-col items-center justify-center md:p-20 py-12 px-4">
-        <div className="flex-1 w-1/2 flex flex-col justify-center blue-violet items-left xl:w-[50%] lg:w-[70%] w:full md:w-[100%] m-auto sm:w-full pl-[60px] p-[40px]">
+      <div className="flex flex-col xl:flex-row lg:flex-col md:flex-col sm:flex-col min-[300px]:flex-col max-[639px]:flex-col items-center justify-center md:p-20 py-12 px-4 w-full">
+        <div className="flex-1 flex flex-col justify-center blue-violet items-left xl:w-[50%] lg:w-[70%] w-full md:w-[100%] m-auto sm:w-full pl-[15px] p-[10px] md:pl-[60px] md:p-[40px]">
           <h1
             className="text-3xl sm:text-5xl py-2 font-bold"
             style={{ fontWeight: "700!important" }}
@@ -164,6 +166,17 @@ const MobWallet = () => {
               />
             </div>
           </div>
+           <h1
+              className="flex flex-row items-center justify-center text-2xl sm:text-3xl py-2 font-bold text-center mt-20"
+              style={{ fontWeight: "700!important" }}
+            >
+              <span>PRIVACY POLICY</span>
+              <span className="text-white ml-4">
+                <Link to="/contact">
+                  <BiLinkExternal className="text-white" />
+                </Link>
+              </span>
+            </h1>
         </div>
       </div>
     </div>

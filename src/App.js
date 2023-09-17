@@ -3,6 +3,7 @@ import Send from "./pages/Send";
 import About from "./pages/About";
 // import Buy from "./pages/Buy";
 import Disclaimer from "./pages/Disclaimer";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
 import RoadmapPage from "./pages/RoadmapPage";
 import { Footer } from "./components";
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/roadmap" element={<RoadmapPage />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/disclaimer" element={<Disclaimer />} />
+          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route exact path="/mobile-wallet" element={<MobilePage />} />
         </Routes>
         <Footer />

@@ -11,6 +11,8 @@ Beautiful super modern website for ArabianChain company and project [DUBXCOIN](h
 ![Ac5](https://kroki.s3.us-west-2.amazonaws.com/ac5_optimized.png)
 ![Ac6](https://kroki.s3.us-west-2.amazonaws.com/ac6_optimized.png)
 
+### `version of node 18.4.0`
+
 In the project directory, you can run:
 
 ### `npm install`
