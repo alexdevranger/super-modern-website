@@ -69,8 +69,9 @@ const Welcome = () => {
           },
         ],
       });
-
-      console.log("Dubx network added to MetaMask:", result);
+      if (result) {
+        console.log("Dubx network added to MetaMask:", result);
+      }
     } catch (error) {
       console.log("Error adding Dubx network to MetaMask:", error);
     }
