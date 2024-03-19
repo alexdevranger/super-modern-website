@@ -1,60 +1,37 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import arLogo from "../images/ar-logo_optimized.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Arabian() {
-  // const [showModal, setShowModal] = React.useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setShowModal(true);
-  //   }, 3000);
-  // }, []);
+  const [showModal, setShowModal] = useState(true);
+  const closeModal = () => {
+    setShowModal(false);
+    // Ovde možete dodati kod koji čuva stanje modal-a, npr. u lokalnom skladištu (localStorage)
+  };
 
   return (
     <div className="flex w-full justify-center items-center">
-      {/* {showModal && (
-        <>
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="w-auto">
-              <div className="bg-[#170e2a] rounded-lg shadow-lg outline-none focus:outline-none">
-                <div className="flex items-center justify-between p-5 border-b border-solid border-gray-200 rounded-t">
-                  <button
-                    className="p-1 ml-auto bg-transparent border-0 text-white text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => {
-                      setShowModal(false);
-                    }}
-                  >
-                    <span className="block text-2xl outline-none focus:outline-none">
-                      x
-                    </span>
-                  </button>
-                </div>
-                <div className="p-4">
-                  <div className="flex items-start justify-center">
-                    <img
-                      src={launch}
-                      alt="d-bank"
-                      className="w-[318px] sm:w-[500px] h-auto"
-                    />
-                  </div>
-                </div>
-                <div className="flex items-center justify-end p-4 border-t border-solid border-gray-200 rounded-b">
-                  <button
-                    className="bg-[#673ab7] text-white active:bg-[#533ab7] font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => {
-                      setShowModal(false);
-                    }}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
+      <div>
+      <div className="relative">
+      {showModal && (
+        <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex justify-center items-center z-20">
+          <div className="bg-white p-8 rounded-lg lg:w-1/2 px-16">
+            <h2 className="text-4xl font-bold my-4 text-center">NFT MARKETPLACE</h2>
+            <p className="text-center text-xl font-semibold underline">📢 Important Announcement: New DUBX NFT Marketplace Comming Soon! 🚀</p>
+            <p className="text-center mt-6">Dear users,</p>
+            <p className="text-center mt-6">We are excited to announce that our highly anticipated DUBX NFT Marketplace will soon be launching, offering a wide range of unique digital collections and artworks.</p>
+            <p className="text-center mt-6">Join our community and stay tuned for updates as we prepare to launch our Marketplace. Visit us soon and start your NFT journey with DUBX!</p>
+            <p className="text-center mt-6 font-semibold">Warm regards, <br />DUBX Team</p>
+            <div className="flex w-full justify-end">
+              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={closeModal}>
+                Close
+              </button>
             </div>
           </div>
-        </>
-      )} */}
+        </div>
+      )}</div>
+      </div>
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 mt-20">
         <div className="flex-1 flex flex-col justify-start items-center w-[70%]">
           <LazyLoadImage

@@ -275,7 +275,7 @@ const Welcome = () => {
           <div className="flex w-full mt-10 items-center justify-between">
             <div className="flex flex-col">
               <h1 className="text-2xl">
-                Add DUBIXCOIN <br />
+                Add DUBXCOIN <br />
                 NETWORK to Metamask
               </h1>
               {/* {window.ethereum?.isMetaMask && wallet.accounts.length < 1 && ( */}
