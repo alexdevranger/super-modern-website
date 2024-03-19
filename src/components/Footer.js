@@ -3,7 +3,7 @@ import logo from "../images/gradientLogo.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { FaGithub } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -89,7 +89,7 @@ const Footer = () => (
               target="_blank"
               rel="noreferrer"
             >
-              {/* <BsTwitterX   className="mr-[30px] text-[30px] text-white" /> */}
+              <FaXTwitter   className="mr-[30px] text-[30px] text-white" />
             </a>
             <a
               href="https://web.telegram.org/k/#@DUBXCOIN_GROUP"

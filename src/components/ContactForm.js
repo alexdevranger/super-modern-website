@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 import { SlEnvolope } from "react-icons/sl";
@@ -127,7 +127,7 @@ const ContactForm = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FaTwitter className="mr-2 text-[50px] text-white" />
+            <FaXTwitter  className="mr-2 text-[50px] text-white" />
           </a>
           <a
             href="https://web.telegram.org/k/#@DUBXCOIN_GROUP"
