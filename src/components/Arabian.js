@@ -22,6 +22,7 @@ function Arabian() {
                   <p className="text-center mt-6">Dear users,</p>
                   <p className="text-center mt-6">We are excited to announce that our highly anticipated DUBX NFT Marketplace will soon be launching, offering a wide range of unique digital collections and artworks.</p>
                   <p className="text-center mt-6">Join our community and stay tuned for updates as we prepare to launch our Marketplace. Visit us soon and start your NFT journey with DUBX!</p>
+                  <p className="text-center mt-6">Additionally, we're thrilled to share that we are also preparing another <strong>groundbreaking application</strong> that will elevate standards and revolutionize the industry. Stay tuned for more details on this exciting new project!</p>
                   <p className="text-center mt-6 font-semibold text-lg">Warm regards, <br />DUBX Team</p>
                   <div className="flex w-full justify-end pt-16">
                     <button className="px-4 py-2 bg-transparent w-full text-white hover:bg-white text-xl border rounded-md hover:text-black hover:border-cyan-400 transition-all duration-300 ease-in hover:font-semibold" onClick={closeModal}>CLOSE</button>
