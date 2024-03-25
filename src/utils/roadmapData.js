@@ -31,7 +31,7 @@ export default [
     cardDetailedText: "New blockchain platform is released",
   },
   {
-    title: "Q4 2022",
+    title: "Q1 2023",
     cardTitle: "DUBX ecosystem",
   },
   {
@@ -47,10 +47,16 @@ export default [
     cardTitle: "R&D lab setup",
   },
   {
-    title: "Q2 2024",
-    cardTitle: "Islamic Banking on Blockchain",
+    title: "Q4 2023",
+    cardTitle: "Payment Gateway",
     cardDetailedText:
-      "The first Islamic Banking products focusing on consumer loans running on the Arabianchain network",
+      "Wordpress Woocommerce plugin for crypto pay with DUBX coin",
+  },
+  {
+    title: "Q1 2024",
+    cardTitle: "DUBX NFT Marketplace",
+    cardDetailedText:
+      "Let's redefine together the future of digital assets and unlock a world of endless possibilities.",
   },
   {
     title: "Q3 2024",
