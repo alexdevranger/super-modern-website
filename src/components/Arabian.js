@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import arLogo from "../images/ar-logo_optimized.webp";
-
+import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -16,31 +16,36 @@ function Arabian() {
         <div className="relative">
           {showModal && (
             <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-20 overflow-y-auto">
-              <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border border-white p-8 rounded-lg lg:w-1/2 w-full sm:max-w-lg px-6 text-white">
-                <h2 className="mt-32 md:mt-6 text-3xl font-bold my-4 text-center pb-8">
-                  NFT MARKETPLACE
-                </h2>
+              <div className="hover:bg-white bg-gray-900 border border-white p-8 rounded-lg lg:w-1/2 w-full sm:max-w-lg px-6 text-white hover:bg-green hover:text-black transition-all ease-linear duration-300">
+                <Link to={"https://dubx.arabianchain.org"}>
+                  <h2 className="mt-32 md:mt-6 text-3xl md:text-6xl font-bold my-4 text-center pb-8 max-[350px]:pt-32">
+                    DUBX NFT MARKETPLACE
+                  </h2>
+                </Link>
                 <p className="text-center text-lg font-semibold underline">
-                  📢 Important Announcement: New DUBX NFT Marketplace Coming
-                  Soon! 🚀
+                  📢 Important Announcement: DUBX NFT Marketplace Enters Beta
+                  Testing Phase! 🚀
                 </p>
-                <p className="text-center mt-6">Dear users,</p>
-                <p className="text-center mt-6">
-                  We are excited to announce that our highly anticipated DUBX
-                  NFT Marketplace will soon be launching, offering a wide range
-                  of unique digital collections and artworks.
+                <p className="px-8 pt-3">Dear valued users,</p>
+                <p className="px-8 pt-3">
+                  We're thrilled to share that our highly anticipated DUBX NFT
+                  Marketplace is now in the beta testing phase! As we fine-tune
+                  and optimize the platform for optimal performance and user
+                  experience, we invite you to join us in this exciting journey.
                 </p>
-                <p className="text-center mt-6">
-                  Join our community and stay tuned for updates as we prepare to
-                  launch our Marketplace. Visit us soon and start your NFT
-                  journey with DUBX!
+
+                <p className="px-8 pt-3">
+                  Stay tuned for updates as we work diligently to finalize the
+                  platform and bring it to you online very soon. Your continued
+                  support and participation are invaluable to us as we strive to
+                  deliver the best NFT experience possible with DUBX.
                 </p>
-                <p className="text-center mt-6">
-                  Additionally, we're thrilled to share that we are also
-                  preparing another <strong>groundbreaking application</strong>{" "}
-                  that will elevate standards and revolutionize the industry.
-                  Stay tuned for more details on this exciting new project!
+
+                <p className="px-8 pt-3">
+                  Thank you for being part of the DUBX community. Together,
+                  let's redefine the future of digital art and collectibles.
                 </p>
+
                 <p className="text-center mt-6 font-semibold text-base">
                   Warm regards, <br />
                   DUBX Team
