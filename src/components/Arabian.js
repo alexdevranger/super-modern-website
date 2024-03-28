@@ -17,15 +17,26 @@ function Arabian() {
           {showModal && (
             <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-20 overflow-y-auto">
               <div className="hover:bg-white bg-gray-900 border border-white p-8 rounded-lg lg:w-1/2 w-full sm:max-w-lg px-6 text-white hover:bg-green hover:text-black transition-all ease-linear duration-300">
-                <Link to={"https://dubx.arabianchain.org"}>
-                  <h2 className="mt-32 md:mt-6 text-3xl md:text-6xl font-bold my-4 text-center pb-8 max-[350px]:pt-32">
-                    DUBX NFT MARKETPLACE
-                  </h2>
-                </Link>
+                <h2 className="mt-32 text-3xl md:text-4xl font-bold my-4 text-center pb-8 max-[350px]:pt-32">
+                  DUBX NFT MARKETPLACE
+                </h2>
+
                 <p className="text-center text-lg font-semibold underline">
-                  📢 Important Announcement: DUBX NFT Marketplace Enters Beta
-                  Testing Phase! 🚀
+                  <span className="font-bold text-3xl">
+                    {" "}
+                    Beta Testing Phase!
+                  </span>{" "}
                 </p>
+                <a href="https://nft.arabianchain.org">
+                  <p className="text-center font-semibold py-1 cursor-pointer transition-all easy-in-out duration-500 hover:text-[#1bf8ec] text-[#e32970]">
+                    qnft.arabianchain.org
+                  </p>
+                </a>
+                <a href="https://nft.arabianchain.org">
+                  <p className="text-center font-semibold py-1 cursor-pointer transition-all easy-in-out duration-500 hover:text-[#e32970]">
+                    TEST WITH US
+                  </p>
+                </a>
                 <p className="px-8 pt-3">Dear valued users,</p>
                 <p className="px-8 pt-3">
                   We're thrilled to share that our highly anticipated DUBX NFT
