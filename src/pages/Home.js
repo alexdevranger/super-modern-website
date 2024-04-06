@@ -11,6 +11,7 @@ import {
   DBank,
   AnimatedRoutes,
   Wallets,
+  Articles,
 } from "../components";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Navbar />
         <Arabian />
       </div>
+      <Articles />
       <Project />
       <Services />
       <Wallets />

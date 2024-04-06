@@ -22,3 +22,4 @@ export { default as ScrollToTop } from "./ScrollToTop";
 export { default as Slider } from "./Slider";
 export { default as MobWallet } from "./MobWallet";
 export { default as NewAccordion } from "./NewAccordion";
+export { default as Articles } from "./Articles";

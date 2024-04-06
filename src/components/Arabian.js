@@ -28,8 +28,8 @@ function Arabian() {
                   </span>{" "}
                 </p>
                 <a href="https://nft.arabianchain.org">
-                  <p className="text-center font-semibold py-1 cursor-pointer transition-all easy-in-out duration-500 hover:text-[#1bf8ec] text-[#e32970]">
-                    qnft.arabianchain.org
+                  <p className="text-center font-semibold py-2 cursor-pointer transition-all easy-in-out duration-500 hover:text-[#1bf8ec] text-[#e32970]">
+                    nft.arabianchain.org
                   </p>
                 </a>
                 <a href="https://nft.arabianchain.org">
