@@ -687,3 +687,47 @@ ul#servicesUl li::before {
   }
 }
 
+
+
+/* TAPE */
+.logo-slider-wrap {
+  white-space: nowrap;
+  overflow: hidden !important;
+  background-color: #fff;
+  padding: 9px 80px;
+}
+.logo-slider-wrap:hover .logo-slider-inner {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+.logo-slider-inner {
+  display: inline-block;
+  padding-left: 0%;
+  animation: logoslider 80s linear infinite;
+}
+.logo-slider-inner h3 {
+  display: inline-block;
+  color: #141b22;
+  margin-right: 113px;
+  font-size: 32px;
+  line-height: 42px;
+}
+.logo-slider-inner.style-2 {
+  animation: logoslider2 80s linear infinite;
+}
+@keyframes logoslider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes logoslider2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,109 +1,117 @@
-import React from "react";
-import desktop from "../images/desktop_optimized.webp";
-import webw from "../images/webw_optimized.webp";
-import mining from "../images/mining_optimized.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React, { useState } from "react";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { FaLinux } from "react-icons/fa";
-import { SiWindows } from "react-icons/si";
-import { FaWallet } from "react-icons/fa";
-import { GiMining } from "react-icons/gi";
-import { HiExternalLink } from "react-icons/hi";
-import videoGalaxy from "../images/video1.mp4";
-import videoMine from "../images/video2.mp4";
+import ListingImg from "../images/listing.png";
+import BinanceArticle from "../images/binanceArticle.png";
+import CMCArticle from "../images/CMCArticle.png";
+import Tape from "./Tape";
 
 const Articles = () => {
   return (
-    <div className="flex flex-col w-full justify-center items-center gradient-pink pt-32">
+    <div className="flex flex-col w-full justify-center items-center gradient-pink pt-32 border-t border-b text-white lg:px-24">
+      {/* TITLE */}
       <h1
         className="text-3xl sm:text-5xl text-center my-2 font-bold"
         style={{ fontWeight: "700!important", color: "#fff" }}
       >
-        Wallets & How To Mine
+        DUBX News
       </h1>
-      <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 my-12">
-        <div
-          className="white-glassmorphism m-4 flex flex-1
+      <Tape />
+      <div className="flex">
+        {/* LINKS */}
+        <div className="flex flex-col items-center md:p-12 py-12 px-4 justify-around min-[1608px]:flex-row">
+          {/* COINMARKETCAP */}
+          <div
+            className="m-4 flex 
                         2xl:min-w-[450px]
                         2xl:max-w-[500px]
                         sm:min-w-[270px]
                         sm:max-w-[400px]
                         min-w-full
-                        flex-col p-3 rounded-md hover:shadow-2xl"
-        >
-          <h3 className="text-white text-1xl 2xl:text-2xl my-1 font-bold borderGradient">
-            COINMARKETCAP{" "}
+                        flex-col p-3 rounded-md border shadow-xl bg-[#fff4] text-white"
+          >
+            <img src={ListingImg} className="rounded-md shadow-xl" />
+            <h4 className="text-center font-semibold text-xl pt-12">
+              DUBX CoinMarketCap
+            </h4>
+            <h5 className="font-bold text-2xl pb-6 text-center">LISTING</h5>
+            <p className="text-sm px-6 pb-12 text-center">
+              We are thrilled to announce that DUBX coin has been listed on
+              CoinMarketCap, marking a significant milestone in our journey.
+            </p>
             <a
-              href="https://github.com/DUBXCOIN/dubx-desktop-wallet/blob/master/README.md"
+              href="https://coinmarketcap.com/currencies/dubxcoin/"
               type="submit"
-              className="mx-4 bg-[#1BF8EC] px-7 mx-4 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
+              target="_blank"
+              className="border rounded-md px-3 mx-4 py-2 cursor-pointer hover:bg-[#ba58e9] hover:border-[#ba58e9] hover:shadow-xl text-white transition-all ease-in duration-300 text-center text-lg 2xl:text-xl my-1 font-bold flex items-center justify-center"
             >
-              github
+              Go to link
             </a>
-          </h3>
-          <div
-            className="flex flex-col justify-center items-center rounded-lg mt-8"
-            style={{
-              boxShadow:
-                "0 8px 6px rgb(193 88 237 / 88%), rgb(148 93 221) 0px 8px 12px",
-            }}
-          >
-            <LazyLoadImage
-              effect="blur"
-              loading="lazy"
-              decoding="async"
-              alt="desktop"
-              src={desktop}
-            />
           </div>
-          {/* <p className="text-center my-2 text-white font-light text-base mt-6 flex items-center justify-evenly">
-           
-          </p> */}
-        </div>
-        <div
-          className="white-glassmorphism m-4 flex flex-1
+
+          {/* BINANCE */}
+          <div
+            className="m-4 flex 
                         2xl:min-w-[450px]
                         2xl:max-w-[500px]
                         sm:min-w-[270px]
                         sm:max-w-[400px]
                         min-w-full
-                        flex-col p-3 rounded-md hover:shadow-2xl"
-        >
-          <h3 className="text-white text-1xl 2xl:text-2xl my-1 font-bold borderGradient">
-            BINANCE
-            <button
-              type="button"
-              className="mx-4 bg-[#1BF8EC] px-7 mx-4 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
-            >
-              video
-            </button>
-          </h3>
-          <div
-            className="flex flex-col justify-center items-center rounded-lg mt-8"
-            style={{
-              boxShadow:
-                "0 8px 6px rgb(193 88 237 / 88%), rgb(148 93 221) 0px 8px 12px",
-            }}
+                        flex-col p-3 rounded-md border shadow-2xl bg-[#ffffffe5] text-black"
           >
-            <LazyLoadImage
-              effect="blur"
-              loading="lazy"
-              decoding="async"
-              alt="desktop"
-              src={webw}
-            />
+            <img src={BinanceArticle} className="shadow-2xl rounded-md" />
+            <div>
+              <h4 className="text-center font-semibold text-2xl pt-12">
+                Binance Article
+              </h4>
+              <h5 className=" px-6 pt-6 font-semibold">
+                New Cryptocurrency Releases, Listings, & Presales Today — Book
+                of Meow, Monkey Coin, <strong>DUBXCOIN</strong>
+              </h5>
+              <p className="text-sm px-6 pb-12 pt-5 text-center">
+                The present market upswing has created favorable conditions for
+                new tokens and presales to ...
+              </p>
+              <a
+                href="https://www.binance.com/en/square/post/6379827672818?ref=811214462&utm_content=zRDyZ6imvi6e4LHGD-xGpw&utm_campaign=app_square_share_link&utm_source=telegram"
+                type="submit"
+                target="_blank"
+                className="border border-[#ba58e9] shadow-xl rounded-md px-3 mx-4 py-2 cursor-pointer hover:bg-[#ba58e9] text-[#ba58e9] hover:text-white text-center text-lg 2xl:text-xl my-1 font-bold flex items-center justify-center"
+              >
+                Read more
+              </a>
+            </div>
           </div>
-          {/* <p className="text-center my-2 text-white font-light text-base mt-6 flex items-center justify-center">
+
+          {/* COINMARKETCAP ARTICLE */}
+          <div
+            className="m-4 flex 
+                        2xl:min-w-[450px]
+                        2xl:max-w-[500px]
+                        sm:min-w-[270px]
+                        sm:max-w-[400px]
+                        min-w-full
+                        flex-col p-3 rounded-md border shadow-xl bg-[#fff4] text-white text-center"
+          >
+            <img src={CMCArticle} className="border-b shadow-lg rounded-md" />
+            <h4 className="font-semibold text-2xl pt-12">
+              CoinMarketCap Article
+            </h4>
+            <p className="font-semibold py-5 ">
+              New Cryptocurrency Releases, Listings, & Presales Today DUBXCOIN
+            </p>
+            <p className="pb-5 text-sm">
+              Dubxcoin stands out as a leading open-source blockchain
+              initiative, driving transformative advancements across ...
+            </p>
             <a
-              href=" https://galaxy.arabianchain.org"
+              href="https://coinmarketcap.com/community/articles/66102deeaf3dee16e26a69b2/"
+              type="submit"
               target="_blank"
-              rel="noreferrer"
-              className="flex justify-center items-center"
+              className="border rounded-md px-3 mx-4 py-2 cursor-pointer hover:bg-[#ba58e9] hover:border-[#ba58e9] hover:shadow-xl text-white transition-all ease-in duration-300 text-center text-lg 2xl:text-xl my-1 font-bold flex items-center justify-center"
             >
-              <FaWallet className="mr-4 text-[30px] text-white" /> galaxy wallet
-              <HiExternalLink className="ml-3 text-[30px] text-white" />
+              Read more
             </a>
-          </p> */}
+          </div>
         </div>
       </div>
     </div>
