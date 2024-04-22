@@ -731,3 +731,30 @@ ul#servicesUl li::before {
     transform: translateX(-100%);
   }
 }
+
+
+/* TEXT ANIMATION */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-move {
+  animation: moveUpDown 6s ease infinite;
+  box-shadow: 10px 12px 12px 0px rgb(147 84 201 / 49%);
+}
+.text-shadow {
+  animation: moveUpDown 6s ease infinite;
+  box-shadow: 7px 11px 12px 0px rgb(3 153 219 / 37%);
+}
+.text-shadowWhite {
+  animation: moveUpDown 6s ease infinite;
+  box-shadow: 7px 11px 12px 0px rgb(255 255 255 / 42%);
+}

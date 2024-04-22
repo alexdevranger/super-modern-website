@@ -12,7 +12,8 @@ function Arabian() {
 
   return (
     <div className="flex w-full justify-center items-center">
-      <div className="z-50">
+      {/* MODAL / NAJAVAq */}
+      {/* <div className="z-50">
         <div className="relative">
           {showModal && (
             <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-20 overflow-y-auto">
@@ -113,7 +114,7 @@ function Arabian() {
             // </div>
           )}
         </div>
-      </div>
+      </div> */}
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 mt-20">
         <div className="flex-1 flex flex-col justify-start items-center w-[70%]">
           <LazyLoadImage

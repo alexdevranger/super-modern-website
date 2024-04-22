@@ -13,6 +13,7 @@ import {
   Wallets,
   Articles,
 } from "../components";
+import NFT from "../components/NFT";
 
 const Home = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const Home = () => {
       <Services />
       <Wallets />
       <AnimatedRoutes />
+      <NFT />
       <Ai />
       <DBank />
       <ContactUs />
