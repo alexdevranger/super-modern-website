@@ -59,8 +59,13 @@ function Tape(props) {
     },
     {
       id: 12,
-      name: "DigitalCoinPrice",
-      link: "https://digitalcoinprice.com/coins/dubxcoin",
+      name: "MiningPoolStats",
+      link: "https://miningpoolstats.stream/dubxcoin",
+    },
+    {
+      id: 13,
+      name: "All-time high",
+      link: "https://ath.ooo/dubx",
     },
   ]);
   return (
@@ -68,10 +73,8 @@ function Tape(props) {
       <div className="logo-slider-wrap">
         <div className="logo-slider-inner">
           {dataLogo.map((idx) => (
-            <a href={idx.link} target="_blank">
-              <h3 key={idx.id} className="font-semibold">
-                {idx.name}
-              </h3>
+            <a href={idx.link} target="_blank" key={idx.id}>
+              <h3 className="font-semibold">{idx.name}</h3>
             </a>
           ))}
         </div>
