@@ -31,16 +31,16 @@ const NFT = () => {
           experience, ensuring authenticity and reliability.
         </p>
         <p className="text-move text-left p-3 text-white rounded-md font-light md:w-9/12 w-11/12 text-base border border-[#9354c9] my-6 py-6">
-          DUBX NFT Marketplace is dedicated to providing a seamless experience
-          for both creators and collectors, ensuring authenticity and
-          reliability every step of the way. Start your NFT journey today with
-          DUBX NFT Marketplace and be part of the digital art revolution.
+          Experience a seamless journey as you navigate through our curated
+          selection of NFTs, each representing a masterpiece crafted by
+          visionary artists. Join us today and embark on your NFT journey,
+          igniting your passion for the digital art revolution.
         </p>
         <p className="text-shadowWhite text-left p-3 text-white rounded-md font-light md:w-9/12 w-11/12 text-base border border-[#ffffff77] mb-6 py-6">
-          DUBX NFT Marketplace is dedicated to providing a seamless experience
-          for both creators and collectors, ensuring authenticity and
-          reliability every step of the way. Start your NFT journey today with
-          DUBX NFT Marketplace and be part of the digital art revolution.
+          With a commitment to authenticity and reliability, our platform
+          provides creators and collectors alike with a seamless experience.
+          Immerse yourself in a world of endless creativity and possibility, and
+          join us in shaping the future of digital art.
         </p>
       </div>
     </div>

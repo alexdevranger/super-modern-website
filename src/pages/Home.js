@@ -26,12 +26,12 @@ const Home = () => {
         <Navbar />
         <Arabian />
       </div>
+      <NFT />
       <Articles />
       <Project />
       <Services />
       <Wallets />
       <AnimatedRoutes />
-      <NFT />
       <Ai />
       <DBank />
       <ContactUs />

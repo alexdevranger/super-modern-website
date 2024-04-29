@@ -150,14 +150,34 @@ function Arabian() {
             connected yet distributed devices.
           </p>
           <a
-            href="https://arabianchain.org/whitepaper.pdf"
+            href="https://play.google.com/store/apps/details?id=com.arabianchain.wallet&hl=bs&gl=US"
             type="submit"
             target="_blank"
             rel="noreferrer"
-            className="my-12 bg-[#1BF8EC] px-7 py-2 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
           >
-            whitepaper
+            <p className="text-[#1af9ec] underline">
+              Download mobile wallet <span>HERE</span>
+            </p>
           </a>
+          <div className="flex justify-center items-center">
+            <a
+              href="https://arabianchain.org/whitepaper.pdf"
+              type="submit"
+              target="_blank"
+              rel="noreferrer"
+              className="my-12 bg-[#1BF8EC] px-7 py-2 rounded-full cursor-pointer hover:bg-[#1BF8EC] text-[#4a2084] font-bold"
+            >
+              whitepaper
+            </a>
+            <a
+              href="https://nft.arabianchain.org/"
+              type="submit"
+              target="_blank"
+              className="border rounded-md px-3 mx-4 py-2 cursor-pointer bg-[#ba58e9] hover:border-[#ba58e9] hover:shadow-xl text-white transition-all ease-in duration-300 text-center text-lg 2xl:text-xl my-1 font-bold flex items-center justify-center"
+            >
+              Go to NFT Marketplace
+            </a>
+          </div>
         </div>
       </div>
     </div>
